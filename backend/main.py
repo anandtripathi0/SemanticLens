@@ -2,7 +2,6 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel,Field
 from typing import Optional
-from mangum import Mangum
 from analyzer import (
     analyze_sentiment, extract_entities,
     extract_keyword, similarity, summarizer
@@ -13,6 +12,7 @@ app = FastAPI(title="semantic analysis")
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
+        "http://localhost:8000",
         "http://localhost:5173",
         "https://semantic-lens-21ao.vercel.app"
     ],
@@ -38,5 +38,3 @@ def analyze(req:AnalyzeRequest):
     }
 
     return result
-
-handler = Mangum(app)
