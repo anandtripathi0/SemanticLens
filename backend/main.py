@@ -11,7 +11,10 @@ app = FastAPI(title="semantic analysis")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://semantic-lens-21ao.vercel.app/"
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
