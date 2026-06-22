@@ -22,7 +22,7 @@ export default function App() {
     setLoading(true)
     setResult(null)
     try {
-      const res = await axios.post(`${API}/analyze`, {
+      const res = await axios.post(`${API.replace(/\/$/, '')}/analyze`, {
         text,
         top_keywords: keywords,
         include_summary: summary,
