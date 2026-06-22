@@ -26,7 +26,7 @@ class AnalyzeRequest(BaseModel):
     include_summary: bool = True
     similarity_text: Optional[str] = None
 
-@app.post('/analyze')
+@app.post('analyze')
 def analyze(req:AnalyzeRequest):
     result = {
         'sentiment':analyze_sentiment(req.text),
