@@ -2,7 +2,7 @@
 
 SemanticLens is a full-stack AI-powered text analysis web app that performs deep semantic analysis using LLaMA 3.3 70B via Groq API. Built with React and FastAPI.
 
-🌐 **Live Demo:** [semanticlens.vercel.app](https://semanticlens.vercel.app)  
+🌐 **Live Demo:** [https://semanticlens.vercel.app](https://semantic-lens-21ao.vercel.app/)
 ⚡ **API Docs:** [semanticlens-api.onrender.com/docs](https://semanticlens-api.onrender.com/docs)
 
 ---
@@ -104,27 +104,6 @@ App runs at `http://localhost:5173`
 |---|---|---|
 | GET | `/` | Health check |
 | POST | `/analyze` | Full semantic analysis |
-
-### Request Body
-```json
-{
-  "text": "Your text here",
-  "top_keywords": 5,
-  "include_summary": true,
-  "similarity_text": null
-}
-```
-
-### Response
-```json
-{
-  "sentiment": { "label": "POSITIVE", "score": 0.95 },
-  "entities": [{ "text": "Elon Musk", "label": "PERSON" }],
-  "keywords": ["tesla", "ai", "technology"],
-  "summary": "Short summary of the text.",
-  "similarity": null
-}
-```
 
 ---
 
