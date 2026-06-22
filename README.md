@@ -147,20 +147,10 @@ VITE_API_URL = https://semanticlens-api.onrender.com
 
 ---
 
-## 📸 Screenshots
-
-> Add screenshots here after deployment
-
----
-
 ## 👨‍💻 Author
 
 **Anand Tripathi**  
 BCA Student — Dr. Virendra Swaroop Institute of Computer Studies, Kanpur  
-[GitHub](https://github.com/yourusername) • [LinkedIn](https://linkedin.com/in/yourusername)
+[GitHub](https://github.com/anandtripathi0) • [LinkedIn](https://linkedin.com/in/anand-tripathi01)
 
 ---
-
-## 📄 License
-
-MIT License — free to use and modify.
