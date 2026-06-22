@@ -5,3 +5,5 @@ nltk
 requests
 python-dotenv
 python-multipart
+groq
+magnum

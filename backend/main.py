@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel,Field
 from typing import Optional
+from mangum import Mangum
 from analyzer import (
     analyze_sentiment, extract_entities,
     extract_keyword, similarity, summarizer
@@ -37,3 +38,5 @@ def analyze(req:AnalyzeRequest):
     }
 
     return result
+
+handler = Mangum(app)
