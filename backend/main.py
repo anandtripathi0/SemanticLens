@@ -14,7 +14,7 @@ app.add_middleware(
     allow_origins=[
         "http://localhost:8000",
         "http://localhost:5173",
-        "https://semantic-lens-21ao.vercel.app"
+        "https://semantic-lens-bhxj.vercel.app"
     ],
     allow_methods=["*"],
     allow_headers=["*"],
